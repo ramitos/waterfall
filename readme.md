@@ -13,4 +13,4 @@ wf.push(function (callback) {
 wf.callback(function () {
   console.log('callback')
 })
-```js
+```

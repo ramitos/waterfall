@@ -1,14 +1,17 @@
-var waterfall = require('async').waterfall
+var waterfall = require('async').waterfall;
 
-module.exports = function () {
-  var wf = new Array()
-  
-  return {
-    callback: function (callback) {
-      waterfall(wf, callback)
+module.exports = function(){
+  var arr = new Array();
+
+  var wf = {
+    callback: function(fn){
+      waterfall(arr, fn);
     },
-    push: function (fn) {
-      wf.push(fn)
+    push: function(fn){
+      arr.push(fn);
+      return wf;
     }
-  }
-}
+  };
+
+  return wf;
+};

@@ -1,6 +1,6 @@
 {
   "name": "waterfall",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "async waterfall wrapper",
   "main": "waterfall.js",
   "repository": {
